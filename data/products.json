@@ -1,0 +1,135 @@
+{
+    "products": [{
+            "id": 6,
+            "title": "Apples",
+            "image": "./images/products/vegs/apple.png",
+            "price": 760,
+            "category": "Featured Products"
+        },
+
+        {
+            "id": 3,
+            "title": "Banana",
+            "image": "./images/products/vegs/banana.png",
+            "price": 265,
+            "category": "Special Products"
+        },
+        {
+            "id": 4,
+            "title": "Carrot",
+            "image": "./images/products/vegs/carrot.png",
+            "price": 850,
+            "category": "Special Products"
+        },
+        {
+            "id": 8,
+            "title": "Cauliflower",
+            "image": "./images/products/vegs/cauliflower.png",
+            "price": 290,
+            "category": "Featured Products"
+        },
+        {
+            "id": 5,
+            "title": "Coconut",
+            "image": "./images/products/vegs/coconut.png",
+            "price": 250,
+            "category": "Special Products"
+        },
+
+        {
+            "id": 7,
+            "title": "Grapes",
+            "image": "./images/products/vegs/grapes.png",
+            "price": 365,
+            "category": "Featured Products"
+        },
+
+
+        {
+            "id": 10,
+            "title": "Lady Finger",
+            "image": "./images/products/vegs/ladiesfinger.png",
+            "price": 385,
+            "category": "Special Products"
+        },
+        {
+            "id": 11,
+            "title": "Onion",
+            "image": "./images/products/vegs/onion.png",
+            "price": 475,
+            "category": "Special Products"
+        },
+        {
+            "id": 13,
+            "title": "Orange",
+            "image": "./images/products/vegs/orange.png",
+            "price": 800,
+            "category": "Trending Products"
+        },
+        {
+            "id": 12,
+            "title": "Pomegranate",
+            "image": "./images/products/vegs/pomegranate.png",
+            "price": 850,
+            "category": "Special Products"
+        },
+
+        {
+            "id": 14,
+            "title": "Potatoes",
+            "image": "./images/products/vegs/potatos.png",
+            "price": 360,
+            "category": "Trending Products"
+        },
+        {
+            "id": 9,
+            "title": "Tomatoes",
+            "image": "./images/products/vegs/tomatoes.png",
+            "price": 320,
+            "category": "Special Products"
+        },
+        {
+            "id": 15,
+            "title": "Mad Angles",
+            "image": "./images/products/snacks/angles.png",
+            "price": 305,
+            "category": "Trending Products"
+        },
+        {
+            "id": 16,
+            "title": "Aloo Bhujia",
+            "image": "./images/products/snacks/bhujia.png",
+            "price": 400,
+            "category": "Special Products"
+        },
+        {
+            "id": 17,
+            "title": "Potato Chips",
+            "image": "./images/products/snacks/chips.png",
+            "price": 550,
+            "category": "Trending Products"
+        },
+        {
+            "id": 2,
+            "title": "Lays Chips",
+            "image": "./images/products/snacks/lchips.png",
+            "price": 300,
+            "category": "Special Products"
+        },
+        {
+            "id": 18,
+            "title": "Namkeen",
+            "image": "./images/products/snacks/namkeen.png",
+            "price": 630,
+            "category": "Trending Products"
+        },
+        {
+            "id": 20,
+            "title": "Puffs",
+            "image": "./images/products/snacks/puffs.png",
+            "price": 270,
+            "category": "Special Products"
+        }
+       
+    ]
+}

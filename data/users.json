@@ -1,0 +1,20 @@
+{
+    "users": [
+        {"username": "Amar",
+            "pass":1,
+            "address": "Houston"
+        },
+        {"username": "Dheeraj",
+            "pass":2,
+            "address": "Pensylvania"
+        },
+        {"username": "Rahul",
+            "pass":3,
+            "address": "Texas"
+        },
+        {"username": "Suhas",
+            "pass":4,
+            "address": "Alabama"
+        }
+    ]
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css
+">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>AgriFresh</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__hamburger">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </div>
+
+          <div class="nav__logo">
+            <!-- <img src="/images/logos/a_logo.jpg" alt="agrifresh"> -->
+            <a href="/" class="scroll-link">
+              Agri Fresh
+            </a>
+          </div>
+
+          <div class="nav__menu">
+            <div class="menu__top">
+            
+              <span class="nav__category">Agri Fresh</span>
+              <a href="#" class="close__toggle">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#header" class="nav__link scroll-link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#category" class="nav__link scroll-link">Category</a>
+              </li>
+             
+              <li class="nav__item">
+                <a href="#contact" class="nav__link scroll-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <span id="loggedInUser"></span>
+          <div class="nav__icons">
+            <button onclick="farmerFunc()" style="border-radius: 10px ;" id="bookSlot">Book Your Slot</button>
+            <button  class="icon__item" onclick="loginfunc()" id="loginBtn">
+              <svg class="icon__user">
+                <use xlink:href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </button>
+
+            <!-- <a href="#" class="icon__item">
+              <svg class="icon__search">
+                <use xlink:href="./images/sprite.svg#icon-search"></use>
+              </svg>
+            </a> -->
+
+            <button class="icon__item" onclick="cartFunc()">
+              <svg class="icon__cart">
+                <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+              </svg>
+              <span id="cart__total"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+  </header>
+  <!-- End Header -->
+
+  <!-- Main -->
+  <main id="main">
+    <div class="container">
+    
+      <section class="category__section section" id="category">
+        <div class="tab__list">
+          <div class="title__container tabs">
+            <div class="section__titles category__titles ">
+              <div class="section__title filter-btn active" data-id="All Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">All Products</h1>
+              </div>
+            </div>
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Trending Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">Trending Products</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Special Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">Special Products</h1>
+              </div>
+            </div>
+
+            <div class="section__titles">
+              <div class="section__title filter-btn" data-id="Featured Products">
+                <span class="dot"></span>
+                <h1 class="primary__title">Featured Products</h1>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="category__container" data-aos="fade-up" data-aos-duration="1200">
+          <div class="category__center"></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Facility Section -->
+    <section class="facility__section section" id="facility">
+      <div class="container">
+        <div class="facility__contianer" data-aos="fade-up" data-aos-duration="1200">
+          <div class="facility__box">
+            <div class="facility-img__container">
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-airplane"></use>
+              </svg>
+            </div>
+            <p>FREE SHIPPING WORLD WIDE</p>
+          </div>
+
+          <div class="facility__box">
+            <div class="facility-img__container">
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-credit-card-alt"></use>
+              </svg>
+            </div>
+            <p>100% MONEY BACK GUARANTEE</p>
+          </div>
+
+          <div class="facility__box">
+            <div class="facility-img__container">
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-credit-card"></use>
+              </svg>
+            </div>
+            <p>MANY PAYMENT GATWAYS</p>
+          </div>
+
+          <div class="facility__box">
+            <div class="facility-img__container">
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-headphones"></use>
+              </svg>
+            </div>
+            <p>24/7 ONLINE SUPPORT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+  
+    <!-- NewsLetter
+    <section class="section newsletter" id="contact">
+      <div class="container">
+        <div class="newsletter__content">
+          <div class="newsletter__data">
+            <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <p>A short sentence describing what someone will receive by subscribing</p>
+          </div>
+          <form action="#">
+            <input type="email" placeholder="Enter your email address" class="newsletter__email">
+            <a class="newsletter__link" href="#">subscribe</a>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  <!-- End Main -->
+
+
+  <!-- PopUp -->
+
+
+  <div class="popup hide__popup" id="login">
+    <div class="popup__content">
+      <div class="popup__close">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </div>
+      <div class="popup__left">
+        <div class="popup-img__container">
+          <!-- <img class="popup__img" src="./images/popup.jpg" alt="popup"> -->
+
+          <form action="#" id="signupform" style="display: none;">
+            <input placeholder="Name" class="popup__form">
+            <input placeholder="UserName" class="popup__form">
+            <input type="number" placeholder="Phone Number" class="popup__form">
+            <input type="address" placeholder="Address" class="popup__form">
+            <input type="password" placeholder="Enter your password..." class="popup__form">
+            <div style="text-align: center;">
+              <input class="signupBtn" type="reset" value="Reset">
+              <button class="signupBtn" id="saveBtn">Save</button>
+              <button class="signupBtn" id="cancelBtn">Cancel</button>
+            </div>
+           
+          </form>
+
+          <div id="signup">
+            <div style="text-align: center;">
+              <img src="/images/logos/b_logo.png" alt="agrifresh">
+            </div>
+           
+            <div style="text-align: center;">
+            <button onclick="showSignUpForm()" class="signupBtn">Sign Up</button>
+          </div>
+        
+        </div>
+        </div>
+      </div>
+      <div class="popup__right">
+        <div class="right__content">
+         
+          <form action="#">
+            <input placeholder="Enter your Username..." class="popup__form" id="uName">
+            <input type="password" placeholder="Enter your Password..." class="popup__form" id="pWord">
+            <span class="warn">Wrong Credentials</span>
+            <br>
+            <button onclick="userlogin()" class="signupBtn">Login</button>
+          </form>
+         
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div class="popup hide__popup" id="cartpopup">
+    <div class="popup__content">
+      <div class="popup__close">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </div>
+      <div class="popup__left">
+        <div class="popup-img__container" style="text-align: center;">
+          <img src="/images/logos/b_logo.png" alt="agrifresh">
+        </div>
+      </div>
+      <div class="popup__right">
+        <div class="right__content">
+          <ul>
+         
+          </ul>
+          <button class="signupBtn" onclick="checkoutFunc()">Checkout</button>
+          <br>
+          <br>
+          <div id="checkout" class="checkout">
+           <div>Payment Link will be sent to regaistered email address.</div>
+           <br>
+           <button class="signupBtn" id="closecart" onclick="closecart()">OK</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup hide__farmer__form" id="bookurslot">
+    <div class="popup__content" style="width: 40%;">
+    
+    
+     <div id="farmerForm">
+            <form action="#">
+              <input placeholder="Enter your Name..." class="popup__form" id="farmerName">
+              <input type="number" placeholder="Enter your Phone..." class="popup__form" id="pWord">
+              <input placeholder="Enter your Village Name..." class="popup__form">
+              <input placeholder="Enter your CropName..." class="popup__form">
+              <input type="number" placeholder="Enter your Crop Weight in Kg..." class="popup__form">
+              <span><b>Optional Fields For Registration</b></span>
+              <input placeholder="Enter your Shop Name..." class="popup__form">
+              <input type="number" placeholder="Enter your Shop Address..." class="popup__form">
+              <span class="warn">Wrong Credentials</span>
+              <br>
+              <button onclick="savefarmer()" class="signupBtn">Save</button>
+              <button onclick="closeRegisterForm()" class="signupBtn">Cancel</button>
+            </form>
+           
+          </div>
+          <div class="hide__farmer__form" id="savedFarmerDetail">
+            <div class="save_detail">Slot Information will sent to registered phone number.</div>
+            <button onclick="doneFunc()" class="signupBtn">Done</button>
+          </div>
+    </div>
+  </div>
+
+  <div class="popup" id="initialModal">
+    <div class="popup__content">
+      <!-- <div class="popup__close">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </div> -->
+      <div class="popup__left">
+        <div class="popup-img__container" style="text-align: center;">
+          <button class="consumerBtn" onclick="consumerFunc()">Consumer</button>
+        </div>
+      </div>
+      <div class="popup__right">
+        <div class="right__content">
+          <!-- <button class="farmerBtn" onclick="farmerLogin()">Farmer</button> -->
+          <div>
+          <b>Farmer Login</b>
+          <br>
+          <br>
+            <form action="#">
+              <input placeholder="Enter your Username..." class="popup__form" id="farmername">
+              <input type="password" placeholder="Enter your Password..." class="popup__form" id="farmerpass">
+              <span class="warn1">Wrong Credentials</span>
+              <br>
+              <button onclick="farmerLogin()" class="signupBtn">Login</button>
+            </form>
+          </div>
+
+        
+          
+          
+
+          <!-- <ul>
+         
+          </ul>
+          <button class="signupBtn" onclick="checkoutFunc()">Checkout</button> -->
+          <!-- <br>
+          <br>
+          <div id="checkout" class="checkout">
+           <div>Payment Link will be sent to regaistered email address.</div>
+           <br>
+           <button class="signupBtn" id="closecart" onclick="closecart()">OK</button>
+          </div> -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Go To -->
+
+  <a href="#header" class="goto-top scroll-link">
+    <svg>
+      <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </a>
+
+
+</body>
+
+</html>
